@@ -1,0 +1,95 @@
+{
+  "main": {
+    "id": "10ab6eaca1f4287c",
+    "type": "split",
+    "children": [
+      {
+        "id": "f75b8f51207b0dd9",
+        "type": "leaf",
+        "state": {
+          "type": "markdown",
+          "state": {
+            "file": "QPU Operations.md",
+            "mode": "source"
+          }
+        }
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "f3f689bb7a931687",
+    "type": "split",
+    "children": [
+      {
+        "id": "4a383921e41ae4f2",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "2bed728785812f0c",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {}
+            }
+          },
+          {
+            "id": "5976282e4c1ddb13",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "a8d4650a26c173d5",
+    "type": "split",
+    "children": [
+      {
+        "id": "cfee17a39ace20d8",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "6fcb45315c3857b1",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "file": "QPU Operations.md",
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              }
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "active": "f75b8f51207b0dd9",
+  "lastOpenFiles": [
+    "QPU Operations.md",
+    "QPU.md",
+    "General.md"
+  ]
+}
