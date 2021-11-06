@@ -58,12 +58,12 @@ The circular notation displays:
 
 The magnitude of the amplitude associated with each value of a qubit can assume is related to the radius of the filled-in area
 
-The realtive phase between the amplitudes of these values is indicated by rotation in the circle |1} relative to the |0} circle.
-
 ![[Pasted image 20211029055512.png]]
 
 
 The magnitude associated with that value really corresponds to the circle radius.
+
+The realtive phase between the amplitudes of these values is indicated by rotation in the circle |1} relative to the |0} circle.
 
 The relative phase of a qubit's state can take any value from 0 to 360, 
 
