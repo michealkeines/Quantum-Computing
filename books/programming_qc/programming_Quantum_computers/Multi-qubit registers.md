@@ -50,3 +50,71 @@ reading a qubit in multi qubit register
 we can determine the probabilty of obtaining a outcome 0 for one single bit by adding the squared magnitudes of all the circles on the |0> left side of the qubits operator pairs, and probability of 1 by adding the squared magnitudes of all of the circles on the right hand side of the qubit operator pairs.
 
 
+# QPU instruction: CNOT
+
+![[Pasted image 20211112092131.png]]
+
+CNOT operates on two qubits and can be though of as an if programming construct
+
+that is 
+
+Apply the NOT operation to a target qubit, but only if a condition qubit has the value 1.
+
+the circuit symbol used for CNOT shows this logic for connecting two qubits with a line.
+
+A filled dot represents that control qubit, while a not symbol shows the target qubit to be conditionally operated on.
+
+
+![[Pasted image 20211112092629.png]]
+
+We can see that the essential operation of CNOT is same as that of NOT, only more selective, applying the not operation only to values who binary representaion have a 1 in second bit.
+
+Reversibility: Like that not operation, CNOT is its own inverse, applying the CNOT operation twice will return a multi-qubit register to its initial state.
+
+
+on its own its doesnt have any import feature, but if we pass superposition in control qubit, the result if 1 would make the operated bit will able be one thus will be 00 or 11, thus 0 or 3, this is means that two qubits are entangled, thus if a reads out 0, b will also be 0 and if a reads out 1, b will also be one.
+
+although the readout must be random, they always agree on 00 or 11
+
+
+# Instruction CPHASE
+
+![[Pasted image 20211112110350.png]]
+
+
+Like the CNOT operation, CPHASE employs a kind of entanglement generating conditional logic.
+
+As CNOT did for NOT, CPHASE restricts this action on some target qubit to occur only when another control qubit assumed value |1>.
+
+CPHASE acts only when its control qubit is |1> and when it does act, it only affects target qubit startes have value |1>
+
+THis means that CPHASE applied to say qubit 1 and 4 results in rotation of all circles for which both two qubits have a value of |1>. because of this property CHASE has a symmetry between its inputs not shared by CNOT
+
+![[Pasted image 20211112113544.png]]
+
+Adding a condition further cuts the number of rotated circle in half.
+
+in general the more we conditon qpu operations, the more selective we can be with which values in a qpu register we manipulate.
+
+# QPU instruction CZ
+
+![[Pasted image 20211112114000.png]]
+
+qpu programs frequently employs the CPHASE(180), thus it got its own name and simplized symbol
+
+# Phase kickback
+
+![[Pasted image 20211112124306.png]]
+
+![[Pasted image 20211112124316.png]]
+
+![[Pasted image 20211112140641.png]]
+
+phase kickback is very usefull idea, as we can use it to apply phase rotations to specific values in a register.
+
+we can do this by performing a phase rotation on some other register conditionsed on qubits from the register we really care about. we can choose these qubits to specifically pick out the values we want to rotate.
+
+it will be of great use to understand the inner workings of the quantum phase estimation QPU permitive.
+
+
+

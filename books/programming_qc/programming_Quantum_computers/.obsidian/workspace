@@ -89,8 +89,9 @@
   "active": "e27c87b6abb826c1",
   "lastOpenFiles": [
     "Multi-qubit registers.md",
-    "QPU Operations.md",
     "QPU.md",
-    "General.md"
+    "QPU Operations.md",
+    "General.md",
+    "Entanglment.md"
   ]
 }
