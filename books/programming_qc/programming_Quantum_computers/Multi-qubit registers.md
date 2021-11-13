@@ -117,4 +117,51 @@ we can do this by performing a phase rotation on some other register conditionse
 it will be of great use to understand the inner workings of the quantum phase estimation QPU permitive.
 
 
+# QPU Instruction: CCNOT (Toffoli)
 
+![[Pasted image 20211113042510.png]]
+
+A CNOT with two condition qubits is commonly referred to as a CCNOT operation.
+
+CCNOT is also sometimes called a Toffoli gate, after the identically titled equivalent gate from conventional computing.
+
+with each condition added, the NOT operation stays the same, but the number of operator pairs affected in the register's circle notation reduced by half.
+
+![[Pasted image 20211113042926.png]]
+
+In a sense CCNOT can be interpreted as an operation implementing "if A and B then flip C".
+
+# QPU instructions: SWAP and CSWAP
+
+![[Pasted image 20211113043629.png]]
+
+Swap or exchange, which simple exchanges two qubits.
+
+if the architecture of a QPU allows it, SWAP may be a truly fundamental operation in which the physical objects representing qubits are actually moved to swap their positions.
+
+it can also done by three CNOT operations
+
+![[Pasted image 20211113043948.png]]
+
+Swap comes into its own when we cosider generalizing it to a conditional operation called CSWAP or conditional exchange.
+
+![[Pasted image 20211113044204.png]]
+
+if the condition qubit for a CSWAP operation is in superposition. we will endup with a superpoistion of our two qubits being exchanged and also being not exchanged.
+
+if the two swap variable are |1>, then output will always be 1
+
+as the two swap variables are more different, the probability of reading a 1 outcome in the output register decresases
+
+The more runs for which we obsrve a 1 outcome, the more convinced we can be that the two input states were identical.
+
+precisely how many times we would need to repeat the swap test depends on how confident we want to be that the two points are identical and how close we would allow them to in order to be called identical.
+
+![[Pasted image 20211113060708.png]]
+
+Rather than looking at the swap test as a yes/no way of ascertaining two states are equal, another usefull interpreation is to note th probability that we get a 1 outcome is a measure of a just how identical the two inputs are.
+
+
+Constructing any conditional operation.
+
+By breaking our single qubit operation into smaller steps

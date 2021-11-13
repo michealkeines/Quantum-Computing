@@ -6,3 +6,10 @@ Entanglement might not necessarily stirke you as strange, agreement between the 
 yet, john bell, conclusivly demostrated that entanglement allows such agreement wihout either of these two reasonable explanations being responsible.
 
 this is the sense in which you may hear it said that entagleent is a kind of distinctly quantum link between qubits that is stronger than could ever be conventionally possible.
+
+
+Fidelity:
+measure of the difference between two register states known as the fidelity.
+
+it mathematically encapsulated a way of comparing two superpositions.
+
